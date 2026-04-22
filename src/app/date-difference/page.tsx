@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Date Difference Calculator - Years, Months & Days Between Dates",
   description: "Free date difference calculator showing the exact breakdown in years, months, and days between two dates. Also displays total months, weeks, days, and hours.",
-  alternates: { canonical: "https://agecalculator.one/date-difference" },
+  alternates: { canonical: "https://datecalculator.one/date-difference" },
   openGraph: {
     title: "Date Difference Calculator - Years, Months & Days Between Dates",
     description: "Free date difference calculator showing the exact breakdown in years, months, and days between two dates.",
-    url: "https://agecalculator.one/date-difference",
+    url: "https://datecalculator.one/date-difference",
   },
 };
 

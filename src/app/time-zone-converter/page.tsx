@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Time Zone Converter - Convert Time Between Time Zones & Plan Meetings",
   description: "Free time zone converter with world clock and meeting planner. Convert times between 24+ time zones, view current time in major cities, and find overlapping business hours.",
-  alternates: { canonical: "https://agecalculator.one/time-zone-converter" },
+  alternates: { canonical: "https://datecalculator.one/time-zone-converter" },
   openGraph: {
     title: "Time Zone Converter - Convert Time Between Time Zones & Plan Meetings",
     description: "Free time zone converter with world clock and meeting planner. Convert times between 24+ time zones.",
-    url: "https://agecalculator.one/time-zone-converter",
+    url: "https://datecalculator.one/time-zone-converter",
   },
 };
 

@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Countdown Timer to Any Date - Days, Hours, Minutes & Seconds",
   description: "Free live countdown timer to any future date. Count down to Christmas, New Year, Valentine's Day, or any custom event. Shows days, hours, minutes, and seconds in real time.",
-  alternates: { canonical: "https://agecalculator.one/countdown" },
+  alternates: { canonical: "https://datecalculator.one/countdown" },
   openGraph: {
     title: "Countdown Timer to Any Date - Days, Hours, Minutes & Seconds",
     description: "Free live countdown timer to any future date. Count down to Christmas, New Year, or any custom event.",
-    url: "https://agecalculator.one/countdown",
+    url: "https://datecalculator.one/countdown",
   },
 };
 

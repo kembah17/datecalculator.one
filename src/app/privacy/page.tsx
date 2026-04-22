@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - agecalculator.one",
-  description: "Privacy policy for agecalculator.one. Learn how we protect your data. All tools run 100% in your browser — we never collect or store your personal information.",
-  alternates: { canonical: "https://agecalculator.one/privacy" },
+  title: "Privacy Policy - datecalculator.one",
+  description: "Privacy policy for datecalculator.one. Learn how we protect your data. All tools run 100% in your browser — we never collect or store your personal information.",
+  alternates: { canonical: "https://datecalculator.one/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-bold text-text dark:text-text-dark">Overview</h2>
           <p>
-            agecalculator.one is committed to protecting your privacy. This privacy policy explains
+            datecalculator.one is committed to protecting your privacy. This privacy policy explains
             how we handle information when you use our website and tools.
           </p>
 
@@ -80,8 +80,8 @@ export default function PrivacyPage() {
           <h2 className="text-xl font-bold text-text dark:text-text-dark">Contact Us</h2>
           <p>
             If you have any questions about this privacy policy, please contact us at{" "}
-            <a href="mailto:hello@agecalculator.one" className="text-primary dark:text-primary-light hover:underline">
-              hello@agecalculator.one
+            <a href="mailto:hello@datecalculator.one" className="text-primary dark:text-primary-light hover:underline">
+              hello@datecalculator.one
             </a>.
           </p>
         </div>

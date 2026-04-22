@@ -83,7 +83,7 @@ export default function Home() {
             <h2 className="text-xl font-bold text-text dark:text-text-dark mb-4">About Age Calculator &amp; Date Tools</h2>
             <div className="prose prose-sm max-w-none text-muted dark:text-text-dark-muted space-y-4">
               <p>
-                Welcome to agecalculator.one, your comprehensive suite of free online date and time calculation tools.
+                Welcome to datecalculator.one, your comprehensive suite of free online date and time calculation tools.
                 Whether you need to calculate your exact age down to the second, find the number of days between two dates,
                 or convert times across different time zones, our tools make it simple and instant.
               </p>
@@ -93,7 +93,7 @@ export default function Home() {
                 calculator shows both calendar days and business days, perfect for project planning and deadline tracking.
               </p>
               <p>
-                Every tool on agecalculator.one runs entirely in your web browser using JavaScript. This means your
+                Every tool on datecalculator.one runs entirely in your web browser using JavaScript. This means your
                 dates, ages, and personal information are never sent to any server. We believe in privacy-first
                 computing, and our client-side architecture ensures your data stays on your device at all times.
               </p>

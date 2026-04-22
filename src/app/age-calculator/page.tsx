@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Age Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
   description: "Free online age calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds. Includes zodiac sign, Chinese zodiac, and next birthday countdown.",
-  alternates: { canonical: "https://agecalculator.one/age-calculator" },
+  alternates: { canonical: "https://datecalculator.one/age-calculator" },
   openGraph: {
     title: "Age Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
     description: "Free online age calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds.",
-    url: "https://agecalculator.one/age-calculator",
+    url: "https://datecalculator.one/age-calculator",
   },
 };
 

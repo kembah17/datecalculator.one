@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Add or Subtract Days from a Date - Date Calculator",
   description: "Free date calculator to add or subtract days, weeks, months, or years from any date. Chain multiple operations and see the resulting date with day of week.",
-  alternates: { canonical: "https://agecalculator.one/add-subtract-days" },
+  alternates: { canonical: "https://datecalculator.one/add-subtract-days" },
   openGraph: {
     title: "Add or Subtract Days from a Date - Date Calculator",
     description: "Free date calculator to add or subtract days, weeks, months, or years from any date.",
-    url: "https://agecalculator.one/add-subtract-days",
+    url: "https://datecalculator.one/add-subtract-days",
   },
 };
 

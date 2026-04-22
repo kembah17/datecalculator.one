@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://agecalculator.one',
+  siteUrl: 'https://datecalculator.one',
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: 'weekly',

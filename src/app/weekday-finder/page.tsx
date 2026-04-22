@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Weekday Finder - What Day of the Week Was Any Date?",
   description: "Find what day of the week any date falls on. Enter a date to discover the weekday, historical events, and batch-check multiple dates at once. Free and instant.",
-  alternates: { canonical: "https://agecalculator.one/weekday-finder" },
+  alternates: { canonical: "https://datecalculator.one/weekday-finder" },
   openGraph: {
     title: "Weekday Finder - What Day of the Week Was Any Date?",
     description: "Find what day of the week any date falls on. Discover historical events and batch-check multiple dates.",
-    url: "https://agecalculator.one/weekday-finder",
+    url: "https://datecalculator.one/weekday-finder",
   },
 };
 

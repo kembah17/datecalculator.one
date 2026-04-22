@@ -9,11 +9,11 @@ import { WebAppSchema } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Days Between Dates Calculator - Count Days, Weeks & Business Days",
   description: "Free online calculator to find the exact number of days between two dates. Shows calendar days, business days, weeks, months, and years. Includes weekend day count.",
-  alternates: { canonical: "https://agecalculator.one/days-between-dates" },
+  alternates: { canonical: "https://datecalculator.one/days-between-dates" },
   openGraph: {
     title: "Days Between Dates Calculator - Count Days, Weeks & Business Days",
     description: "Free online calculator to find the exact number of days between two dates. Shows calendar days, business days, weeks, months, and years.",
-    url: "https://agecalculator.one/days-between-dates",
+    url: "https://datecalculator.one/days-between-dates",
   },
 };
 

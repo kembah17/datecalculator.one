@@ -59,9 +59,9 @@ export const tools: Tool[] = [
 ];
 
 export const siteConfig = {
-  name: "agecalculator.one",
+  name: "datecalculator.one",
   title: "Age Calculator & Date Tools",
   description: "Free online age calculator and date tools. Calculate your exact age, days between dates, date differences, countdowns, and more. 100% client-side, private, and fast.",
-  url: "https://agecalculator.one",
-  email: "hello@agecalculator.one",
+  url: "https://datecalculator.one",
+  email: "hello@datecalculator.one",
 };
