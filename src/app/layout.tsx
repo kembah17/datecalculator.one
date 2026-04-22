@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/tools-data";
 
 export const metadata: Metadata = {
   title: {
-    default: `Free Age Calculator & Date Tools Online | ${siteConfig.name}`,
+    default: `Free Date Calculator & Date Tools Online | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.title,
-    title: `Free Age Calculator & Date Tools Online | ${siteConfig.name}`,
+    title: `Free Date Calculator & Date Tools Online | ${siteConfig.name}`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `Free Age Calculator & Date Tools Online | ${siteConfig.name}`,
+    title: `Free Date Calculator & Date Tools Online | ${siteConfig.name}`,
     description: siteConfig.description,
   },
   alternates: {

@@ -10,7 +10,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-primary/10 via-surface dark:via-surface-dark to-primary/5 py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text dark:text-text-dark mb-6">
-            Free <span className="text-primary dark:text-primary-light">Age Calculator</span> &amp; Date Tools
+            Free <span className="text-primary dark:text-primary-light">Date Calculator</span> &amp; Date Tools
           </h1>
           <p className="text-lg sm:text-xl text-muted dark:text-text-dark-muted max-w-3xl mx-auto mb-8">
             Calculate your exact age, find days between dates, convert time zones, and more.
@@ -80,7 +80,7 @@ export default function Home() {
 
         <section className="mt-16">
           <div className="card">
-            <h2 className="text-xl font-bold text-text dark:text-text-dark mb-4">About Age Calculator &amp; Date Tools</h2>
+            <h2 className="text-xl font-bold text-text dark:text-text-dark mb-4">About Date Calculator &amp; Date Tools</h2>
             <div className="prose prose-sm max-w-none text-muted dark:text-text-dark-muted space-y-4">
               <p>
                 Welcome to datecalculator.one, your comprehensive suite of free online date and time calculation tools.
@@ -88,7 +88,7 @@ export default function Home() {
                 or convert times across different time zones, our tools make it simple and instant.
               </p>
               <p>
-                Our age calculator provides detailed breakdowns including your zodiac sign, Chinese zodiac animal,
+                Our date calculator provides detailed breakdowns including your zodiac sign, Chinese zodiac animal,
                 the day of the week you were born, and a live countdown to your next birthday. The days between dates
                 calculator shows both calendar days and business days, perfect for project planning and deadline tracking.
               </p>

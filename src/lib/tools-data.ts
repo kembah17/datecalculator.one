@@ -8,7 +8,7 @@ export interface Tool {
 
 export const tools: Tool[] = [
   {
-    name: "Age Calculator",
+    name: "Date Calculator",
     slug: "age-calculator",
     description: "Calculate your exact age in years, months, days, hours, minutes, and seconds with live ticking. Discover your zodiac sign, Chinese zodiac, next birthday countdown, and more.",
     icon: "🎂",
@@ -60,8 +60,8 @@ export const tools: Tool[] = [
 
 export const siteConfig = {
   name: "datecalculator.one",
-  title: "Age Calculator & Date Tools",
-  description: "Free online age calculator and date tools. Calculate your exact age, days between dates, date differences, countdowns, and more. 100% client-side, private, and fast.",
+  title: "Date Calculator & Date Tools",
+  description: "Free online date calculator and date tools. Calculate your exact age, days between dates, date differences, countdowns, and more. 100% client-side, private, and fast.",
   url: "https://datecalculator.one",
   email: "hello@datecalculator.one",
 };

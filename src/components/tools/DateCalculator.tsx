@@ -47,7 +47,7 @@ function getChineseZodiac(year: number) {
 
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-export default function AgeCalculator() {
+export default function DateCalculator() {
   const [birthDate, setBirthDate] = useState("");
   const [now, setNow] = useState<Date | null>(null);
 

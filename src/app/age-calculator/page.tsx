@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AgeCalculator from "@/components/tools/AgeCalculator";
+import DateCalculator from "@/components/tools/DateCalculator";
 import AdSlot from "@/components/ui/AdSlot";
 import FAQ from "@/components/ui/FAQ";
 import RelatedTools from "@/components/ui/RelatedTools";
@@ -7,20 +7,20 @@ import FaqSchema from "@/components/seo/FaqSchema";
 import { WebAppSchema } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Age Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
-  description: "Free online age calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds. Includes zodiac sign, Chinese zodiac, and next birthday countdown.",
+  title: "Date Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
+  description: "Free online date calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds. Includes zodiac sign, Chinese zodiac, and next birthday countdown.",
   alternates: { canonical: "https://datecalculator.one/age-calculator" },
   openGraph: {
-    title: "Age Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
-    description: "Free online age calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds.",
+    title: "Date Calculator - Calculate Your Exact Age in Years, Months, Days & Seconds",
+    description: "Free online date calculator. Enter your birthdate to find your exact age in years, months, days, hours, minutes, and seconds.",
     url: "https://datecalculator.one/age-calculator",
   },
 };
 
 const faqItems = [
   {
-    question: "How does the age calculator work?",
-    answer: "Our age calculator takes your birth date and compares it to the current date and time. It calculates the exact difference in years, months, days, hours, minutes, and seconds. The seconds counter updates in real-time, giving you a live view of your age.",
+    question: "How does the date calculator work?",
+    answer: "Our date calculator takes your birth date and compares it to the current date and time. It calculates the exact difference in years, months, days, hours, minutes, and seconds. The seconds counter updates in real-time, giving you a live view of your age.",
   },
   {
     question: "Is my birth date stored or shared?",
@@ -40,15 +40,15 @@ const faqItems = [
   },
 ];
 
-export default function AgeCalculatorPage() {
+export default function DateCalculatorPage() {
   return (
     <>
       <FaqSchema items={faqItems} />
-      <WebAppSchema name="Age Calculator" description="Calculate your exact age in years, months, days, hours, minutes, and seconds with live ticking." url="/age-calculator" />
+      <WebAppSchema name="Date Calculator" description="Calculate your exact age in years, months, days, hours, minutes, and seconds with live ticking." url="/age-calculator" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl sm:text-4xl font-bold text-text dark:text-text-dark mb-3">
-            Age Calculator
+            Date Calculator
           </h1>
           <p className="text-muted dark:text-text-dark-muted max-w-2xl mx-auto">
             Enter your birth date to calculate your exact age in years, months, days, hours, minutes, and live ticking seconds.
@@ -58,7 +58,7 @@ export default function AgeCalculatorPage() {
         <AdSlot label="Advertisement" />
 
         <div className="mt-8">
-          <AgeCalculator />
+          <DateCalculator />
         </div>
 
         <div className="mt-8">
@@ -66,14 +66,14 @@ export default function AgeCalculatorPage() {
         </div>
 
         <article className="mt-12 card">
-          <h2 className="text-xl font-bold text-text dark:text-text-dark mb-4">How to Use the Age Calculator</h2>
+          <h2 className="text-xl font-bold text-text dark:text-text-dark mb-4">How to Use the Date Calculator</h2>
           <div className="prose prose-sm max-w-none text-muted dark:text-text-dark-muted space-y-4">
             <p>
-              Our free online age calculator makes it easy to determine your exact age down to the second. Whether you need to know your precise age for official documents, are curious about how many days you have lived, or want to find out your zodiac sign, this tool provides comprehensive age-related information instantly.
+              Our free online date calculator makes it easy to determine your exact age down to the second. Whether you need to know your precise age for official documents, are curious about how many days you have lived, or want to find out your zodiac sign, this tool provides comprehensive age-related information instantly.
             </p>
             <h3 className="text-lg font-semibold text-text dark:text-text-dark">Step-by-Step Instructions</h3>
             <p>
-              Using the age calculator is straightforward. Simply click on the date input field and select your birth date from the calendar picker, or type it in directly. The calculator immediately processes your birth date and displays your exact age broken down into years, months, and days. Below the main age display, you will see a live-ticking counter showing hours, minutes, and seconds that updates every second.
+              Using the date calculator is straightforward. Simply click on the date input field and select your birth date from the calendar picker, or type it in directly. The calculator immediately processes your birth date and displays your exact age broken down into years, months, and days. Below the main age display, you will see a live-ticking counter showing hours, minutes, and seconds that updates every second.
             </p>
             <h3 className="text-lg font-semibold text-text dark:text-text-dark">Understanding Your Results</h3>
             <p>

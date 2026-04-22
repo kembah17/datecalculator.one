@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     question: "Can I use this to calculate age?",
-    answer: "Yes, you can use this calculator to determine age by entering a birth date as the start date and today's date as the end date. However, our dedicated Age Calculator provides additional features like zodiac signs, live ticking seconds, and birthday countdowns.",
+    answer: "Yes, you can use this calculator to determine age by entering a birth date as the start date and today's date as the end date. However, our dedicated Date Calculator provides additional features like zodiac signs, live ticking seconds, and birthday countdowns.",
   },
   {
     question: "What is the maximum date range supported?",

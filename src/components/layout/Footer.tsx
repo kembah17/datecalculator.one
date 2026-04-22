@@ -9,10 +9,10 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
               <span className="text-2xl">🎂</span>
-              <span className="text-lg font-bold text-primary">agecalculator<span className="text-text dark:text-text-dark">.one</span></span>
+              <span className="text-lg font-bold text-primary">datecalculator<span className="text-text dark:text-text-dark">.one</span></span>
             </Link>
             <p className="text-sm text-muted dark:text-text-dark-muted leading-relaxed">
-              Free online age calculator and date tools. All calculations happen in your browser — your data never leaves your device.
+              Free online date calculator and date tools. All calculations happen in your browser — your data never leaves your device.
             </p>
           </div>
           <div>

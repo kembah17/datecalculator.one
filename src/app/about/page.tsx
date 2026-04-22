@@ -3,7 +3,7 @@ import Link from "next/link";
 import { tools } from "@/lib/tools-data";
 
 export const metadata: Metadata = {
-  title: "About - Age Calculator & Date Tools | datecalculator.one",
+  title: "About - Date Calculator & Date Tools | datecalculator.one",
   description: "Learn about datecalculator.one, a free suite of online age and date calculation tools. All tools run 100% in your browser for complete privacy.",
   alternates: { canonical: "https://datecalculator.one/about" },
 };

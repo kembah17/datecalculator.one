@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl">🎂</span>
-            <span className="text-xl font-bold text-primary">agecalculator<span className="text-text dark:text-text-dark">.one</span></span>
+            <span className="text-xl font-bold text-primary">datecalculator<span className="text-text dark:text-text-dark">.one</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
