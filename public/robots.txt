@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://agecalculator.one
+
+# Sitemaps
+Sitemap: https://agecalculator.one/sitemap.xml
