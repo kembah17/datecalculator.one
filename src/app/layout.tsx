@@ -3,8 +3,13 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/tools-data";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+
+// GSC verification loaded from env
+const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
+  ...(gscVerification && { verification: { google: gscVerification } }),
   title: {
     default: `Free Date Calculator & Date Tools Online | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`,
@@ -58,6 +63,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
