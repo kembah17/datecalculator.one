@@ -5,18 +5,18 @@ import { differenceInYears, differenceInMonths, differenceInDays, differenceInHo
 import CopyButton from "@/components/ui/CopyButton";
 
 const ZODIAC_SIGNS = [
-  { sign: "Capricorn", symbol: "\u2651", start: [12, 22], end: [1, 19] },
-  { sign: "Aquarius", symbol: "\u2652", start: [1, 20], end: [2, 18] },
-  { sign: "Pisces", symbol: "\u2653", start: [2, 19], end: [3, 20] },
-  { sign: "Aries", symbol: "\u2648", start: [3, 21], end: [4, 19] },
-  { sign: "Taurus", symbol: "\u2649", start: [4, 20], end: [5, 20] },
-  { sign: "Gemini", symbol: "\u264A", start: [5, 21], end: [6, 20] },
-  { sign: "Cancer", symbol: "\u264B", start: [6, 21], end: [7, 22] },
-  { sign: "Leo", symbol: "\u264C", start: [7, 23], end: [8, 22] },
-  { sign: "Virgo", symbol: "\u264D", start: [8, 23], end: [9, 22] },
-  { sign: "Libra", symbol: "\u264E", start: [9, 23], end: [10, 22] },
-  { sign: "Scorpio", symbol: "\u264F", start: [10, 23], end: [11, 21] },
-  { sign: "Sagittarius", symbol: "\u2650", start: [11, 22], end: [12, 21] },
+  { sign: "Capricorn", symbol: "♑", start: [12, 22], end: [1, 19] },
+  { sign: "Aquarius", symbol: "♒", start: [1, 20], end: [2, 18] },
+  { sign: "Pisces", symbol: "♓", start: [2, 19], end: [3, 20] },
+  { sign: "Aries", symbol: "♈", start: [3, 21], end: [4, 19] },
+  { sign: "Taurus", symbol: "♉", start: [4, 20], end: [5, 20] },
+  { sign: "Gemini", symbol: "♊", start: [5, 21], end: [6, 20] },
+  { sign: "Cancer", symbol: "♋", start: [6, 21], end: [7, 22] },
+  { sign: "Leo", symbol: "♌", start: [7, 23], end: [8, 22] },
+  { sign: "Virgo", symbol: "♍", start: [8, 23], end: [9, 22] },
+  { sign: "Libra", symbol: "♎", start: [9, 23], end: [10, 22] },
+  { sign: "Scorpio", symbol: "♏", start: [10, 23], end: [11, 21] },
+  { sign: "Sagittarius", symbol: "♐", start: [11, 22], end: [12, 21] },
 ];
 
 const CHINESE_ZODIAC = [
@@ -25,9 +25,9 @@ const CHINESE_ZODIAC = [
 ];
 
 const CHINESE_ZODIAC_EMOJI: Record<string, string> = {
-  Monkey: "\uD83D\uDC12", Rooster: "\uD83D\uDC13", Dog: "\uD83D\uDC15", Pig: "\uD83D\uDC16",
-  Rat: "\uD83D\uDC00", Ox: "\uD83D\uDC02", Tiger: "\uD83D\uDC05", Rabbit: "\uD83D\uDC07",
-  Dragon: "\uD83D\uDC09", Snake: "\uD83D\uDC0D", Horse: "\uD83D\uDC0E", Goat: "\uD83D\uDC10",
+  Monkey: "🐒", Rooster: "🐓", Dog: "🐕", Pig: "🐖",
+  Rat: "🐀", Ox: "🐂", Tiger: "🐅", Rabbit: "🐇",
+  Dragon: "🐉", Snake: "🐍", Horse: "🐎", Goat: "🐐",
 };
 
 function getZodiacSign(month: number, day: number) {
