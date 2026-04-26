@@ -27,9 +27,18 @@ export default function Header() {
     <header className="bg-surface dark:bg-surface-dark border-b border-border dark:border-border-dark sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🎂</span>
-            <span className="text-xl font-bold text-primary">datecalculator<span className="text-text dark:text-text-dark">.one</span></span>
+          <Link href="/" className="flex items-center gap-2" style={{ textDecoration: 'none' }}>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="8" fill="var(--color-brand)"/>
+              <rect x="8" y="10" width="20" height="18" rx="3" stroke="white" strokeWidth="2" fill="none"/>
+              <line x1="8" y1="16" x2="28" y2="16" stroke="white" strokeWidth="2"/>
+              <line x1="14" y1="10" x2="14" y2="7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+              <line x1="22" y1="10" x2="22" y2="7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
+              <circle cx="14" cy="22" r="1.5" fill="white"/>
+              <circle cx="18" cy="22" r="1.5" fill="white"/>
+              <circle cx="22" cy="22" r="1.5" fill="white"/>
+            </svg>
+            <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>datecalculator<span style={{ color: 'var(--color-brand)' }}>.one</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">

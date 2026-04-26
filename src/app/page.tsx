@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <WebSiteSchema />
-      <section style={{ background: 'linear-gradient(135deg, color-mix(in srgb, var(--color-brand) 20%, transparent), var(--color-surface), color-mix(in srgb, var(--color-brand) 10%, transparent))' }} className="py-16 sm:py-24">
+      <section style={{ background: 'linear-gradient(135deg, color-mix(in srgb, var(--color-brand) 20%, var(--color-page-bg)), var(--color-page-bg), color-mix(in srgb, var(--color-brand) 10%, var(--color-page-bg)))' }} className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6" style={{ color: 'var(--color-text-heading)' }}>
             Free <span style={{ color: 'var(--color-brand)' }}>Date Calculator</span> &amp; Date Tools
