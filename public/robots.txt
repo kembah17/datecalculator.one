@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://datecalculator.one
-
-# Sitemaps
-Sitemap: https://datecalculator.one/sitemap.xml

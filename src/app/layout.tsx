@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.title,
     title: `Free Date Calculator & Date Tools Online | ${siteConfig.name}`,
     description: siteConfig.description,
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Date Calculator' }],
   },
   twitter: {
     card: "summary_large_image",
