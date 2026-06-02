@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://datecalculator.one',
+  siteUrl: 'https://www.datecalculator.one',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: './out',
