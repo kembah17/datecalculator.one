@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy - datecalculator.one",
   description: "Privacy policy for datecalculator.one. Learn how we protect your data. All tools run 100% in your browser — we never collect or store your personal information.",
-  alternates: { canonical: "https://www.datecalculator.one/privacy" },
+  alternates: { canonical: "https://datecalculator.one/privacy" },
 };
 
 export default function PrivacyPage() {

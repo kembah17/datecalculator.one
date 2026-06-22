@@ -62,6 +62,6 @@ export const siteConfig = {
   name: "datecalculator.one",
   title: "Date Calculator & Date Tools",
   description: "Free online date calculator and date tools. Calculate your exact age, days between dates, date differences, countdowns, and more. 100% client-side, private, and fast.",
-  url: "https://www.datecalculator.one",
+  url: "https://datecalculator.one",
   email: "hello@datecalculator.one",
 };
