@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { tools } from '@/lib/tools-data';
+import { tools, siteConfig } from '@/lib/tools-data';
 
 export default function Footer() {
   return (
@@ -16,9 +16,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-lg font-bold" style={{ color: 'var(--color-footer-text)' }}>{site_display}</span>
+              <span className="text-lg font-bold" style={{ color: 'var(--color-footer-text)' }}>{siteConfig.name}</span>
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-footer-muted)' }}>{site_desc}</p>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-footer-muted)' }}>{siteConfig.description}</p>
           </div>
 
           {/* Tools */}
@@ -64,7 +64,7 @@ export default function Footer() {
         </div>
 
         {/* MyHustle Search Widget */}
-        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1.5rem' }}>          <div style={{ background: 'linear-gradient(135deg, #059669 0%, #047857 100%)', borderRadius: '12px', padding: '20px', maxWidth: '400px', margin: '0 auto' }}>            <div style={{ textAlign: 'center', marginBottom: '12px' }}>              <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ color: 'white', textDecoration: 'none', fontSize: '18px', fontWeight: 700 }}>{building} MyHustle</a>
+        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1.5rem' }}>          <div style={{ background: 'linear-gradient(135deg, #059669 0%, #047857 100%)', borderRadius: '12px', padding: '20px', maxWidth: '400px', margin: '0 auto' }}>            <div style={{ textAlign: 'center', marginBottom: '12px' }}>              <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ color: 'white', textDecoration: 'none', fontSize: '18px', fontWeight: 700 }}>🏢 MyHustle</a>
               <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '13px', margin: '4px 0 0' }}>Find businesses across Nigeria</p>
             </div>
             <form
@@ -74,7 +74,7 @@ export default function Footer() {
               <input name="q" type="text" placeholder="Search businesses..." style={{ flex: 1, padding: '10px 14px', border: 'none', borderRadius: '8px', fontSize: '14px', outline: 'none', background: 'white', color: '#1f2937' }} />
               <button type="submit" style={{ background: '#fbbf24', color: '#1f2937', border: 'none', borderRadius: '8px', padding: '10px 16px', fontWeight: 600, fontSize: '14px', cursor: 'pointer', whiteSpace: 'nowrap' }}>Search</button>
             </form>
-            <div style={{ textAlign: 'center', marginTop: '8px' }}>              <a href="https://myhustle.space/list-your-business" target="_blank" rel="noopener" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', textDecoration: 'none' }}>List your business free {arrow}</a>
+            <div style={{ textAlign: 'center', marginTop: '8px' }}>              <a href="https://myhustle.space/list-your-business" target="_blank" rel="noopener" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', textDecoration: 'none' }}>List your business free →</a>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="mt-8 pt-8 text-center text-sm" style={{ borderTop: '1px solid var(--color-footer-border)', color: 'var(--color-footer-muted)' }}>          &copy; {new Date().getFullYear()} {site_display}. All rights reserved.
+        <div className="mt-8 pt-8 text-center text-sm" style={{ borderTop: '1px solid var(--color-footer-border)', color: 'var(--color-footer-muted)' }}>          &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
         </div>
       </div>
     </footer>
