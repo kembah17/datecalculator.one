@@ -1,71 +1,54 @@
-import Link from "next/link";
-import { tools, siteConfig } from "@/lib/tools-data";
+import Link from 'next/link';
+import { tools } from '@/lib/tools-data';
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: 'var(--color-footer-bg)', color: 'var(--color-footer-text)' }} className="mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer
+      style={{
+        backgroundColor: 'var(--color-footer-bg)',
+        color: 'var(--color-footer-text)',
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4" style={{ textDecoration: 'none' }}>
-              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="36" height="36" rx="8" fill="var(--color-brand)"/>
-                <rect x="8" y="10" width="20" height="18" rx="3" stroke="white" strokeWidth="2" fill="none"/>
-                <line x1="8" y1="16" x2="28" y2="16" stroke="white" strokeWidth="2"/>
-                <line x1="14" y1="10" x2="14" y2="7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                <line x1="22" y1="10" x2="22" y2="7" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-                <circle cx="14" cy="22" r="1.5" fill="white"/>
-                <circle cx="18" cy="22" r="1.5" fill="white"/>
-                <circle cx="22" cy="22" r="1.5" fill="white"/>
-              </svg>
-              <span className="text-lg font-bold" style={{ color: 'var(--color-footer-link)' }}>datecalculator<span style={{ color: 'var(--color-footer-text)' }}>.one</span></span>
-            </Link>
-            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-footer-muted)' }}>
-              Free online date calculator and date tools. All calculations happen in your browser — your data never leaves your device.
-            </p>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-lg font-bold" style={{ color: 'var(--color-footer-text)' }}>{site_display}</span>
+            </div>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--color-footer-muted)' }}>{site_desc}</p>
           </div>
+
+          {/* Tools */}
           <div>
             <h3 className="font-semibold mb-4" style={{ color: 'var(--color-footer-text)' }}>Tools</h3>
             <ul className="space-y-2">
               {tools.map((tool) => (
                 <li key={tool.slug}>
-                  <Link
-                    href={`/${tool.slug}`}
-                    className="text-sm transition-colors"
-                    style={{ color: 'var(--color-footer-muted)' }}
-                  >
-                    {tool.icon} {tool.name}
-                  </Link>
+                  <Link href={tool.slug} className="text-sm no-underline hover:underline" style={{ color: 'var(--color-footer-muted)' }}>{tool.name}</Link>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Pages */}
           <div>
             <h3 className="font-semibold mb-4" style={{ color: 'var(--color-footer-text)' }}>Company</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-sm transition-colors" style={{ color: 'var(--color-footer-muted)' }}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-sm transition-colors" style={{ color: 'var(--color-footer-muted)' }}>
-                  Privacy Policy
-                </Link>
-              </li>
+              <li><Link href="/about" className="text-sm no-underline hover:underline" style={{ color: 'var(--color-footer-muted)' }}>About</Link></li>
+              <li><Link href="/privacy" className="text-sm no-underline hover:underline" style={{ color: 'var(--color-footer-muted)' }}>Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-sm no-underline hover:underline" style={{ color: 'var(--color-footer-muted)' }}>Terms of Service</Link></li>
             </ul>
           </div>
         </div>
-                {/* More Free Tools */}
-        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '2rem', paddingTop: '1.5rem' }}>
-          <h4 style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--color-footer-text)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>More Free Tools</h4>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem 1.5rem' }}>
-            <a href="https://pdftools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📄 PDF Tools</a>
+
+        {/* More Free Tools */}
+        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '2rem', paddingTop: '1.5rem' }}>          <h4 style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--color-footer-text)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>More Free Tools</h4>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem 1.5rem' }}>            <a href="https://pdftools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📄 PDF Tools</a>
             <a href="https://pictools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🖼️ Image Tools</a>
             <a href="https://percentcalc.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🔢 Percentage Calculator</a>
-            <a href="https://developertools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>💻 Developer Tools</a>
-            <a href="https://wordcount.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📝 Word Counter</a>
             <a href="https://texttools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🔤 Text Tools</a>
+            <a href="https://wordcount.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📝 Word Counter</a>
             <a href="https://socialmediatools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📱 Social Media Tools</a>
             <a href="https://randomize.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🎲 Random Generator</a>
             <a href="https://qrcodegenerator.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📲 QR Code Generator</a>
@@ -73,20 +56,33 @@ export default function Footer() {
             <a href="https://invoicegenerator.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🧾 Invoice Generator</a>
             <a href="https://caloriecalculator.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🔥 Calorie Calculator</a>
             <a href="https://passwordgenerator.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>🔐 Password Generator</a>
+            <a href="https://datecalculator.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>📅 Date Calculator</a>
+            <a href="https://developertools.one" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none' }}>👨‍💻 Developer Tools</a>
+          </div>
+        </div>
+
+        {/* MyHustle Search Widget */}
+        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1.5rem' }}>          <div style={{ background: 'linear-gradient(135deg, #059669 0%, #047857 100%)', borderRadius: '12px', padding: '20px', maxWidth: '400px', margin: '0 auto' }}>            <div style={{ textAlign: 'center', marginBottom: '12px' }}>              <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ color: 'white', textDecoration: 'none', fontSize: '18px', fontWeight: 700 }}>{building} MyHustle</a>
+              <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '13px', margin: '4px 0 0' }}>Find businesses across Nigeria</p>
+            </div>
+            <form
+              onSubmit={(e: React.FormEvent<HTMLFormElement>) => { e.preventDefault(); const q = (e.currentTarget.elements.namedItem("mh-q") as HTMLInputElement)?.value?.trim(); if (q) window.open("https://myhustle.space/search?q=" + encodeURIComponent(q), "_blank"); }}
+              style={{ display: 'flex', gap: '8px' }}
+            >
+              <input name="mh-q" type="text" placeholder="Search businesses..." style={{ flex: 1, padding: '10px 14px', border: 'none', borderRadius: '8px', fontSize: '14px', outline: 'none', background: 'white', color: '#1f2937' }} />
+              <button type="submit" style={{ background: '#fbbf24', color: '#1f2937', border: 'none', borderRadius: '8px', padding: '10px 16px', fontWeight: 600, fontSize: '14px', cursor: 'pointer', whiteSpace: 'nowrap' }}>Search</button>
+            </form>
+            <div style={{ textAlign: 'center', marginTop: '8px' }}>              <a href="https://myhustle.space/list-your-business" target="_blank" rel="noopener" style={{ color: 'rgba(255,255,255,0.7)', fontSize: '11px', textDecoration: 'none' }}>List your business free {arrow}</a>
+            </div>
           </div>
         </div>
 
         {/* Nigerian Business Directory */}
-        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1rem' }}>
-          <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-            Discover Nigerian businesses on <span style={{ color: 'var(--color-footer-link)', fontWeight: 500 }}>MyHustle.space</span> &mdash; Nigeria&apos;s free business directory
+        <div style={{ borderTop: '1px solid var(--color-footer-border)', marginTop: '1.5rem', paddingTop: '1rem' }}>          <a href="https://myhustle.space" target="_blank" rel="noopener" style={{ fontSize: '0.8125rem', color: 'var(--color-footer-muted)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>            Discover Nigerian businesses on <span style={{ color: 'var(--color-footer-link)', fontWeight: 500 }}>MyHustle.space</span> &mdash; Nigeria&apos;s free business directory
           </a>
         </div>
 
-        <div className="mt-8 pt-8 text-center" style={{ borderTop: '1px solid var(--color-footer-border)' }}>
-          <p className="text-sm" style={{ color: 'var(--color-footer-muted)' }}>
-            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved. 100% client-side processing.
-          </p>
+        <div className="mt-8 pt-8 text-center text-sm" style={{ borderTop: '1px solid var(--color-footer-border)', color: 'var(--color-footer-muted)' }}>          &copy; {new Date().getFullYear()} {site_display}. All rights reserved.
         </div>
       </div>
     </footer>
